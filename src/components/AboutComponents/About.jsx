@@ -29,13 +29,13 @@ export default function About() {
   return (
     <div id="aboutPage">
       <div className="pageTitle">About Me</div>
-      <AboutSection aboutText="Software Engineer" imageSrc="/images/about/se1.jpg" id="about0" descriptionAppear />
-      <AboutSection aboutText="Software Engineer" imageSrc="/images/about/se2.jpg" additionalText="I enjoy creating software that is fun and easy to use" id="about1" descriptionDisappear />
-      <AboutSection aboutText="BYU Student" imageSrc="/images/about/byu1.jpg" id="about2" descriptionAppear />
-      <AboutSection aboutText="BYU Student" imageSrc="/images/about/byu2.jpg" additionalText="I'm majoring in Computer Science (emphasis on Software Engineering), and minoring in both Business and Family Life" id="about3" />
-      <AboutSection aboutText="BYU Student" imageSrc="/images/about/byu3.jpg" additionalText="I will graduate in December 2021" id="about4" descriptionDisappear />
-      <AboutSection aboutText="Husband" imageSrc="/images/about/husband1.jpg" id="about5" descriptionAppear />
-      <AboutSection aboutText="Husband" imageSrc="/images/about/husband2.jpg" additionalText="My wife and I got married in May 2019 and live in Provo, UT" id="about6" descriptionDisappear />
+      <AboutSection aboutText="Software Engineer" imageSrc="/images/about/se1.png" id="about0" descriptionAppear />
+      <AboutSection aboutText="Software Engineer" imageSrc="/images/about/se2.png" additionalText="I enjoy creating software that is fun and easy to use" id="about1" descriptionDisappear />
+      <AboutSection aboutText="BYU Student" imageSrc="/images/about/byu1.png" id="about2" descriptionAppear />
+      <AboutSection aboutText="BYU Student" imageSrc="/images/about/byu2.png" additionalText="I'm majoring in Computer Science (emphasis on Software Engineering), and minoring in both Business and Family Life" id="about3" />
+      <AboutSection aboutText="BYU Student" imageSrc="/images/about/byu3.png" additionalText="I will graduate in December 2021" id="about4" descriptionDisappear />
+      <AboutSection aboutText="Husband" imageSrc="/images/about/husband1.png" id="about5" descriptionAppear />
+      <AboutSection aboutText="Husband" imageSrc="/images/about/husband2.png" additionalText="My wife and I got married in May 2019 and live in Provo, UT" id="about6" descriptionDisappear />
       <div className={`aboutBtn nextButton${currentSection === 6 ? " lastPage" : ""}`} onClick={showNextSection}>
         <div className="nextButtonText">Next</div>
         <i className="nextArrow material-icons">keyboard_arrow_right</i>
