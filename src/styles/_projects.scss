@@ -1,0 +1,210 @@
+@import "./variables";
+@import "./animations";
+
+#projectsPage {
+  animation: fade 1s forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12vh;
+ 
+  .projectContainer {
+    margin-bottom: 6vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid $darkColor;
+    border-radius: 20px;
+    background-color: #d8e0e7;
+
+    .projectTitle {
+      margin-top: 20px;
+      font-size: 4.5rem;
+      font-weight: 500;
+      color: $accentColor;
+    }
+
+    .project {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      padding-bottom: 20px;
+
+      .imageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+
+        .platformSelectButton {
+          display: flex;
+          z-index: 1;
+
+          div {
+            font-size: 2.5rem;
+            color: $accentColor;
+            border: 3px solid $accentColor;
+            cursor: pointer;
+            padding: 4px 12px;
+            transition: all .3s ease;
+          }
+
+          .desktopButton {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+          }
+
+          .mobileButton {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
+
+          .active {
+            background-color: $accentColor;
+            color: $lightColor;
+          }
+        }
+
+        .image {
+          width: auto;
+          height: auto;
+          max-width: 700px;
+          max-height: 700px;
+        }
+
+        .desktopImage {
+          margin-top: -100px;
+          margin-bottom: -100px;
+        }
+
+        .mobileImage {
+          max-height: 500px;
+        }
+
+        .carousel {
+          display: flex;
+          align-items: center;
+
+          .leftArrow, .rightArrow {
+            font-size: 5rem;
+            cursor: pointer;
+          }
+
+          .carouselIcon {
+            height: 5px;
+            width: 30px;
+            margin: 0 2px;
+            background-color: $darkColor;
+            border-radius: 2px;
+            opacity: .5;
+            cursor: pointer;
+          }
+
+          .active {
+            opacity: 100;
+          }
+        }
+      }
+
+      .projectSummary {
+        width: 45%;
+        max-width: 600px;
+
+        .description {
+          font-size: 2rem;
+        }
+
+        .skillsUsed {
+          margin: 30px 0px;
+          font-size: 2.5rem;
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #projectsPage {   
+    .projectContainer {
+      width: 70vw;
+
+      .project {
+        flex-direction: column;
+
+        .projectSummary {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #projectsPage {
+    padding-top: 6vh;
+ 
+    .projectContainer {
+      margin-bottom: 6vh;
+
+      .projectTitle {
+        font-size: 2.5rem;
+      }
+
+      .project {
+        flex-direction: column;
+        padding-bottom: 0px;
+
+        .imageContainer {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+
+          .platformSelectButton {
+            div {
+              font-size: 2rem;
+            }
+          }
+
+          .image {
+            max-width: 90%;
+            max-height: 300px;
+          }
+
+          .desktopImage {
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+
+          .carousel {
+            .leftArrow, .rightArrow {
+              font-size: 4rem;
+            }
+  
+            .carouselIcon {
+              width: 10px;
+            }
+  
+            .active {
+              opacity: 100;
+            }
+          }
+        }
+
+        .projectSummary {
+          width: 80%;
+
+          .description {
+            font-size: 1.5rem;
+          }
+
+          .skillsUsed {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

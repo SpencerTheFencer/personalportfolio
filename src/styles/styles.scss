@@ -1,0 +1,64 @@
+@import "./variables";
+@import "./menu";
+@import "./home";
+@import "./about";
+@import "./skills";
+@import "./projects";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $mainFont;
+  color: $darkColor;
+}
+
+#page {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  position: absolute;
+  z-index: -5;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.59) 0%,
+    #f0eef0 82.81%
+  );
+
+  .blurPage {
+    filter: blur(3px);
+    transition: filter 0.5s ease-in;
+  }
+}
+
+#pageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.pageTitle {
+  position: fixed;
+  top: 36px;
+  right: 100px;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .pageTitle {
+    top: 20px;
+    right: 80px;
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+}
