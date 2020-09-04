@@ -182,27 +182,27 @@
   }
 }
 
-@-webkit-keyframes imageSlideUp {
+@-webkit-keyframes aboutImage {
   from {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(15%);
             transform: translateY(15%);
   }
   to {
-    opacity: 30%;
+    opacity: .3;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
 }
 
-@keyframes imageSlideUp {
+@keyframes aboutImage {
   from {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(15%);
             transform: translateY(15%);
   }
   to {
-    opacity: 30%;
+    opacity: .3;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
@@ -489,14 +489,14 @@
   }
 }
 
-@keyframes imageSlideUp {
+@keyframes aboutImage {
   from {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(15%);
             transform: translateY(15%);
   }
   to {
-    opacity: 30%;
+    opacity: .3;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
@@ -1015,14 +1015,14 @@
   }
 }
 
-@keyframes imageSlideUp {
+@keyframes aboutImage {
   from {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(15%);
             transform: translateY(15%);
   }
   to {
-    opacity: 30%;
+    opacity: .3;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
@@ -1254,8 +1254,8 @@
 }
 
 #aboutPage .aboutSection.active .aboutImage {
-  -webkit-animation: imageSlideUp 1.5s forwards;
-          animation: imageSlideUp 1.5s forwards;
+  -webkit-animation: aboutImage 1.5s forwards;
+          animation: aboutImage 1.5s forwards;
 }
 
 #aboutPage .aboutSection.active .aboutText .description.enter {
@@ -1462,14 +1462,14 @@
   }
 }
 
-@keyframes imageSlideUp {
+@keyframes aboutImage {
   from {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(15%);
             transform: translateY(15%);
   }
   to {
-    opacity: 30%;
+    opacity: .3;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
@@ -1667,14 +1667,14 @@
   }
 }
 
-@keyframes imageSlideUp {
+@keyframes aboutImage {
   from {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(15%);
             transform: translateY(15%);
   }
   to {
-    opacity: 30%;
+    opacity: .3;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
