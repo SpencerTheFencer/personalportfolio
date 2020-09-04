@@ -48,13 +48,13 @@
 
 @-webkit-keyframes disappear {
   to {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
 @keyframes disappear {
   to {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
@@ -423,7 +423,7 @@
 
 @keyframes disappear {
   to {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
@@ -949,7 +949,7 @@
 
 @keyframes disappear {
   to {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
@@ -1273,7 +1273,7 @@
 }
 
 #aboutPage .aboutSection.disappear .aboutImage {
-  opacity: 30%;
+  opacity: .3;
   -webkit-animation: disappear 1s forwards;
           animation: disappear 1s forwards;
 }
@@ -1396,7 +1396,7 @@
 
 @keyframes disappear {
   to {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
@@ -1601,7 +1601,7 @@
 
 @keyframes disappear {
   to {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
