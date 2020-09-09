@@ -14,7 +14,7 @@ export default function Menu() {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `slideLeft 0.75s ease forwards ${index / 7 + 0.20}s`;
+        link.style.animation = `slideLeft 0.75s ease forwards ${index / 7 + 0.50}s`;
       }
     });
   };

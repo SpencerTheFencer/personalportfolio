@@ -3,7 +3,7 @@ import Project from './Project';
 
 export default function PortfolioProject() {
   return (
-    <Project title="Portfolio" skillsUsed="React, JavaScript, Sass" description={getDescription()} isWebApp defaultImages={getImages()} mobileImages={getMobileImages()} />
+    <Project title="Portfolio" skillsUsed="React, JavaScript, Sass" description={getDescription()} isWebApp defaultImages={getImages()} mobileImages={getMobileImages()} gitLink={"https://github.com/SpencerTheFencer/personalportfolio"} />
   )
 }
 

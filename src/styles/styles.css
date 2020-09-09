@@ -1836,6 +1836,16 @@
 #projectsPage .projectContainer .project .projectSummary {
   width: 45%;
   max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #projectsPage .projectContainer .project .projectSummary .description {
@@ -1847,6 +1857,31 @@
   font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
+}
+
+#projectsPage .projectContainer .project .projectSummary .projectButtons {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#projectsPage .projectContainer .project .projectSummary .projectButtons .projectButton {
+  border: 2px solid #424242;
+  color: #424242;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 12px 12px;
+  text-align: center;
+}
+
+#projectsPage .projectContainer .project .projectSummary .projectButtons .projectButton:hover {
+  background-color: #424242;
+  color: #f0eef0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1919,6 +1954,23 @@
   }
   #projectsPage .projectContainer .project .projectSummary .skillsUsed {
     font-size: 2rem;
+  }
+  #projectsPage .projectContainer .project .projectSummary .projectButtons {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #projectsPage .projectContainer .project .projectSummary .projectButtons .projectButton {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
   }
 }
 

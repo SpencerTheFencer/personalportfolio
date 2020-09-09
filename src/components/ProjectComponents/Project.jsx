@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function Project(props) {
   let [currentImageIndex, setCurrentImageIndex] = useState(0);
   let [isDefaultPlatformSelected, setIsDefaultPlatformSelected] = useState(true);
-  const { title, skillsUsed, isWebApp, description, defaultImages, mobileImages } = props
+  const { title, skillsUsed, isWebApp, description, defaultImages, mobileImages, gitLink, tryLink } = props
 
   const navigateLeft = () => {
     if (currentImageIndex === 0) {
@@ -25,7 +25,7 @@ export default function Project(props) {
 
   const CarouselImageIcons = () => {
     return (
-      defaultImages.map((image, index) => <div className={`carouselIcon${currentImageIndex === index ? " active" : ""}`} onClick={() => setCurrentImageIndex(index)}></div>)
+      defaultImages.map((image, index) => <div className={`carouselIcon${currentImageIndex === index ? " active" : ""}`} onClick={() => setCurrentImageIndex(index)} key={index}></div>)
     )
   }
 
@@ -54,6 +54,10 @@ export default function Project(props) {
         <div className="projectSummary">
           <div className="description">{description || ""}</div>
           <div className="skillsUsed">Skills developed: {skillsUsed || ""}</div>
+          <div className="projectButtons">
+            {gitLink ? <a href={gitLink} className="gitButton projectButton" target="_blank" rel="noopener noreferrer">Source code</a> : <p>*Because this was for a class project, I did not put the source code in a public repo</p>}
+            {tryLink ? <a href={tryLink} className="tryButton projectButton" target="_blank" rel="noopener noreferrer">Try it out</a> : null}
+          </div>
         </div>
       </div>
     </div>
